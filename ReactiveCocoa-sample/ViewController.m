@@ -28,10 +28,10 @@ static NSString *const UserDidLogOutNotification = @"UserDidLogOutNotification";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [self setAppearence];
+    
     LoginManager *Loginmanager = [[LoginManager alloc] init];
     @weakify(self);
-    
-    [self setAppearence];
 
     RAC(self.logInButton, enabled) = [RACSignal
                                       combineLatest:@[
@@ -90,8 +90,8 @@ static NSString *const UserDidLogOutNotification = @"UserDidLogOutNotification";
 -(void)showAlert
 {
     UIAlertController * ac =
-    [UIAlertController alertControllerWithTitle:@"ログイン失敗"
-                                        message:@"パスワードが違います。"
+    [UIAlertController alertControllerWithTitle:@"Login failed."
+                                        message:@"username or password is wrong."
                                  preferredStyle:UIAlertControllerStyleAlert];
     
     
