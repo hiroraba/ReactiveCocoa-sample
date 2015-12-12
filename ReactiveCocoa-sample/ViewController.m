@@ -51,9 +51,10 @@ static NSString *const UserDidLogOutNotification = @"UserDidLogOutNotification";
                                   password:self.passwordTextField.text];
         
         [loginSignal subscribeError:^(NSError *error) {
-            [self showAlert];
+            [self showAlertWithStatus:NO];
         } completed:^{
             @strongify(self);
+            [self showAlertWithStatus:YES];
             self.loggedIn = YES;
         }];
     }];
@@ -87,11 +88,14 @@ static NSString *const UserDidLogOutNotification = @"UserDidLogOutNotification";
     [self.passwordTextField setSecureTextEntry:YES];
 }
 
--(void)showAlert
+-(void)showAlertWithStatus:(BOOL)status
 {
+    NSString *title = (status) ? @"Login Success" : @"Login failed";
+    NSString *message = (status) ? @"welcome!" : @"username or password is wrong.";
+    
     UIAlertController * ac =
-    [UIAlertController alertControllerWithTitle:@"Login failed."
-                                        message:@"username or password is wrong."
+    [UIAlertController alertControllerWithTitle:title
+                                        message:message
                                  preferredStyle:UIAlertControllerStyleAlert];
     
     
