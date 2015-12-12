@@ -13,9 +13,14 @@
 		69EFE1721C1BE98C005AB495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EFE1701C1BE98C005AB495 /* Main.storyboard */; };
 		69EFE1741C1BE98C005AB495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69EFE1731C1BE98C005AB495 /* Assets.xcassets */; };
 		69EFE1771C1BE98C005AB495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EFE1751C1BE98C005AB495 /* LaunchScreen.storyboard */; };
+		69EFE1801C1BFC47005AB495 /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EFE17F1C1BFC47005AB495 /* LoginManager.m */; settings = {ASSET_TAGS = (); }; };
+		69EFE1831C1C0CE3005AB495 /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EFE1821C1C0CE3005AB495 /* UIColor+ColorWithHex.m */; settings = {ASSET_TAGS = (); }; };
+		EAC37B51DC022F5D6C65FE5F /* libPods-ReactiveCocoa-sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F795440EDE99A1CAC11CB78 /* libPods-ReactiveCocoa-sample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44E98C8C0B746382CCC46A59 /* Pods-ReactiveCocoa-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa-sample/Pods-ReactiveCocoa-sample.release.xcconfig"; sourceTree = "<group>"; };
+		4F795440EDE99A1CAC11CB78 /* libPods-ReactiveCocoa-sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveCocoa-sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69EFE1641C1BE98C005AB495 /* ReactiveCocoa-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveCocoa-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69EFE1681C1BE98C005AB495 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69EFE16A1C1BE98C005AB495 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,11 @@
 		69EFE1731C1BE98C005AB495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69EFE1761C1BE98C005AB495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69EFE1781C1BE98C005AB495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69EFE17E1C1BFC47005AB495 /* LoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
+		69EFE17F1C1BFC47005AB495 /* LoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
+		69EFE1811C1C0CE2005AB495 /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
+		69EFE1821C1C0CE3005AB495 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
+		CAEC07192BEA2C44BC443939 /* Pods-ReactiveCocoa-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa-sample/Pods-ReactiveCocoa-sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC37B51DC022F5D6C65FE5F /* libPods-ReactiveCocoa-sample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				69EFE1661C1BE98C005AB495 /* ReactiveCocoa-sample */,
 				69EFE1651C1BE98C005AB495 /* Products */,
+				E1BB9C630A4A5A62F0DA5DAA /* Pods */,
+				E05E313EB120881E9ED5FC55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +80,10 @@
 				69EFE1751C1BE98C005AB495 /* LaunchScreen.storyboard */,
 				69EFE1781C1BE98C005AB495 /* Info.plist */,
 				69EFE1671C1BE98C005AB495 /* Supporting Files */,
+				69EFE17E1C1BFC47005AB495 /* LoginManager.h */,
+				69EFE17F1C1BFC47005AB495 /* LoginManager.m */,
+				69EFE1811C1C0CE2005AB495 /* UIColor+ColorWithHex.h */,
+				69EFE1821C1C0CE3005AB495 /* UIColor+ColorWithHex.m */,
 			);
 			path = "ReactiveCocoa-sample";
 			sourceTree = "<group>";
@@ -79,6 +96,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E05E313EB120881E9ED5FC55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F795440EDE99A1CAC11CB78 /* libPods-ReactiveCocoa-sample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1BB9C630A4A5A62F0DA5DAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAEC07192BEA2C44BC443939 /* Pods-ReactiveCocoa-sample.debug.xcconfig */,
+				44E98C8C0B746382CCC46A59 /* Pods-ReactiveCocoa-sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69EFE17B1C1BE98C005AB495 /* Build configuration list for PBXNativeTarget "ReactiveCocoa-sample" */;
 			buildPhases = (
+				A8BD3C4F5997E0AFA1110B44 /* Check Pods Manifest.lock */,
 				69EFE1601C1BE98C005AB495 /* Sources */,
 				69EFE1611C1BE98C005AB495 /* Frameworks */,
 				69EFE1621C1BE98C005AB495 /* Resources */,
+				B17D2F54AF63A0A6B75E9FFF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,13 +181,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A8BD3C4F5997E0AFA1110B44 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B17D2F54AF63A0A6B75E9FFF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveCocoa-sample/Pods-ReactiveCocoa-sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69EFE1601C1BE98C005AB495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				69EFE16F1C1BE98C005AB495 /* ViewController.m in Sources */,
+				69EFE1801C1BFC47005AB495 /* LoginManager.m in Sources */,
 				69EFE16C1C1BE98C005AB495 /* AppDelegate.m in Sources */,
+				69EFE1831C1C0CE3005AB495 /* UIColor+ColorWithHex.m in Sources */,
 				69EFE1691C1BE98C005AB495 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +333,7 @@
 		};
 		69EFE17C1C1BE98C005AB495 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAEC07192BEA2C44BC443939 /* Pods-ReactiveCocoa-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ReactiveCocoa-sample/Info.plist";
@@ -273,6 +345,7 @@
 		};
 		69EFE17D1C1BE98C005AB495 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E98C8C0B746382CCC46A59 /* Pods-ReactiveCocoa-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ReactiveCocoa-sample/Info.plist";
@@ -301,6 +374,7 @@
 				69EFE17D1C1BE98C005AB495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
