@@ -1,1 +1,1 @@
-# RectiveCocoa-sample
+# ReactiveCocoa-sample
